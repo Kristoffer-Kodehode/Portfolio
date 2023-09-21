@@ -50,6 +50,7 @@ nav {
 nav a:hover {
   transform: scale(1.07) rotate(1deg);
   color: #d9d9e2;
+  min-width: 42px;
 }
 
 #languages {
@@ -75,7 +76,7 @@ section {
   height: 100vh;
   width: 90%;
   margin-left: 10vw;
-  border: 1px var(--color_txt) solid;
+  border: 1px var(--color_primary) solid;
   background-image: url("./img/contentFrame/portfolio_page_frame.svg");
   background-repeat: no-repeat;
   background-position: 90%;
@@ -137,7 +138,7 @@ a {
   margin: 0 10px;
 }
 
-.end-container {
+.project-end-container {
   display: flex;
   justify-content: space-between;
 }
