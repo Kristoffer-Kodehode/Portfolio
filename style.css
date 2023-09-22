@@ -15,6 +15,7 @@ body {
   position: relative;
   color: var(--color_txt);
   overflow-x: hidden;
+  /* overflow: hidden; */
   scroll-behavior: smooth;
   font-size: 1.2vw;
   background-image: url("img/harry-burk-zD-F9UZRFbM-unsplash.jpg"); /*Photo by Harry Burk on Unsplash*/
@@ -200,7 +201,7 @@ a:hover {
 
   #contact {
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -211,10 +212,10 @@ a:hover {
   }
 
   #languages {
-    margin: 0;
-    position: fixed;
+    margin: 1em 0 0 0;
+    /* position: fixed;
     right: 10em;
-    top: 1.5em;
+    top: 1.5em; */
   }
 
   #current-language {
