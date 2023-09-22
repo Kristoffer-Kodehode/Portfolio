@@ -9,7 +9,7 @@
 html,
 body {
   box-sizing: border-box;
-  background-color: var(--color_primary);
+
   margin: 0;
   padding: 0;
   position: relative;
@@ -17,6 +17,9 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   font-size: 1.2vw;
+  background-image: url("img/harry-burk-zD-F9UZRFbM-unsplash.jpg"); /*Photo by Harry Burk on Unsplash*/
+  background-size: 100vw 100vh;
+  background-repeat: repeat-y;
 }
 
 nav {
@@ -70,6 +73,7 @@ main {
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   overflow: hidden;
+  background-color: #1c2431e0;
 }
 
 section {
@@ -92,6 +96,10 @@ a {
   text-shadow: #f7f7ff09 1px 1px 6px;
   text-decoration: none;
 }
+a:hover {
+  color: #121820;
+  text-decoration: dotted;
+}
 
 .content {
   margin: 10% 17% 0 30%;
@@ -110,7 +118,7 @@ a {
 }
 
 #portrait {
-  border: var(--color_primary) 0.7em groove;
+  border: var(--color_primary) 0.3em groove;
   height: 7em;
   width: 5em;
   /* margin: 15em 20em 0 0; */
@@ -127,15 +135,15 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: none;
-  margin: none;
+  padding: 0;
+  margin: 0 0 10% 0;
 }
 
 .project-img {
   width: 160px;
   height: 90px;
-  border: #1c2431 0.7em groove;
-  margin: 0 10px;
+  border: #1c2431 0.3em groove;
+  margin: 0 20px;
 }
 
 .project-end-container {
@@ -185,12 +193,17 @@ form {
     cursor: pointer;
     transition: ease-in 0.5s;
     text-align: center;
-    padding: 2em;
+    padding-left: 2em;
   }
 
   #navigation a {
     margin: 0.1em;
     padding: 0.4em;
+  }
+
+  #contact {
+    display: flex;
+    flex-direction: column;
   }
 
   #languages {
@@ -206,10 +219,29 @@ form {
   }
 
   section {
-    background: url(./img/contentFrame/portfolio_page_frame_mobile.svg);
+    background-color: var(
+      --color_secondary
+    ); /*url(./img/contentFrame/portfolio_page_frame_mobile.svg); */
+    background-image: none;
     background-repeat: no-repeat;
-    background-size: 80vw;
-    background-position: 90%;
-    margin: 7vh, 0, 0, 0;
+    background-size: 90vw;
+    margin-top: 7vh;
+    margin-left: 0;
+    margin-right: 10%;
+    padding: 0;
+    width: 100vw;
+    height: fit-content;
+  }
+
+  .content {
+    margin: 15em 15% 0 15%;
+  }
+
+  .project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
   }
 }
