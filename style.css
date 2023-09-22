@@ -50,7 +50,7 @@ nav {
   padding: 2em;
 }
 
-nav a:hover {
+#navigation a:hover {
   transform: scale(1.07) rotate(1deg);
   color: #d9d9e2;
   min-width: 42px;
@@ -85,8 +85,6 @@ section {
   background-repeat: no-repeat;
   background-position: 90%;
   background-size: 80vw;
-  /*margin-bottom: 1em;
-    position: relative;*/
   scroll-snap-align: start;
   scroll-snap-type: mandatory;
 }
@@ -102,7 +100,7 @@ a:hover {
 }
 
 .content {
-  margin: 10% 17% 0 30%;
+  margin: 10% 17% 10% 30%;
   min-height: 50vh;
 }
 
@@ -121,8 +119,6 @@ a:hover {
   border: var(--color_primary) 0.3em groove;
   height: 7em;
   width: 5em;
-  /* margin: 15em 20em 0 0; */
-  /* margin: 10% 13% 0 0; */
 }
 
 #project-container {
@@ -155,13 +151,6 @@ a:hover {
   display: flex;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 @media (max-width = 2000px) {
   #home-content {
     right: 13em;
@@ -169,7 +158,14 @@ form {
   }
 }
 
+/*@media (aspect-ratio: 16/9) or (aspect-ratio: 16/10) */
+
 @media (max-aspect-ratio: 1/1) {
+  HTML,
+  Body {
+    font-size: medium;
+  }
+
   nav {
     display: flex;
     flex-direction: row;
@@ -193,7 +189,8 @@ form {
     cursor: pointer;
     transition: ease-in 0.5s;
     text-align: center;
-    padding-left: 2em;
+    padding-left: 0.2em;
+    position: relative;
   }
 
   #navigation a {
@@ -203,11 +200,21 @@ form {
 
   #contact {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  #contact img {
+    max-width: 24px;
   }
 
   #languages {
     margin: 0;
+    position: fixed;
+    right: 10em;
+    top: 1.5em;
   }
 
   #current-language {
@@ -218,14 +225,15 @@ form {
     max-width: 16px;
   }
 
+  main {
+    background-color: var(--color_secondary);
+  }
+
   section {
-    background-color: var(
-      --color_secondary
-    ); /*url(./img/contentFrame/portfolio_page_frame_mobile.svg); */
-    background-image: none;
+    background-color: var(--color_secondary);
+    background-image: none; /*url(./img/contentFrame/portfolio_page_frame_mobile.svg); 
     background-repeat: no-repeat;
-    background-size: 90vw;
-    margin-top: 7vh;
+    background-size: 90vw;*/
     margin-left: 0;
     margin-right: 10%;
     padding: 0;
@@ -234,7 +242,16 @@ form {
   }
 
   .content {
-    margin: 15em 15% 0 15%;
+    margin-top: 15em;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  #home-content {
+    margin-top: 8vh;
+    height: 40vh;
   }
 
   .project-content {
@@ -243,5 +260,8 @@ form {
     justify-content: center;
     padding: 0;
     margin: 0;
+    margin-bottom: 15%;
+    height: fit-content;
+    width: auto;
   }
 }
