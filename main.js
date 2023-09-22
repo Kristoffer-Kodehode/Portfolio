@@ -9,4 +9,3 @@ const contactSection = document.getElementById("contact");
 
 homeBtn.addEventListener("click", () => navTo(landingSection));
 projectsBtn.addEventListener("click", () => navTo(projectSection));
-contactBtn.addEventListener("click", () => navTo(contactSection));
