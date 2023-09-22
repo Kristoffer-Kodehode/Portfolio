@@ -98,6 +98,7 @@ a {
 a:hover {
   color: #121820;
   text-decoration: dotted;
+  transform: scale(1.01);
 }
 
 .content {
@@ -137,8 +138,8 @@ a:hover {
 }
 
 .project-img {
-  width: 160px;
-  height: 90px;
+  max-width: 250px;
+  max-height: 150px;
   border: #1c2431 0.3em groove;
   margin: 0 20px;
 }
