@@ -121,7 +121,7 @@ a:hover {
   border: var(--color_primary) 0.3em groove;
   border-radius: 13px;
   max-height: 7em;
-  min-width: 5em;
+  min-width: 6em;
 }
 
 #project-container {
