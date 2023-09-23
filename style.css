@@ -119,8 +119,8 @@ a:hover {
 
 #portrait {
   border: var(--color_primary) 0.3em groove;
-  height: 7em;
-  width: 5em;
+  border-radius: 13px;
+  max-height: 7em;
 }
 
 #project-container {
