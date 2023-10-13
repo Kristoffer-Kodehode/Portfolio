@@ -158,6 +158,18 @@ a:hover {
   display: flex;
 }
 
+#down:hover,
+#up:hover {
+  transform: none;
+}
+
+#up,
+#up:hover {
+  transform: rotate(180deg);
+  margin: 0;
+  align-self: left;
+}
+
 @media (max-width = 2000px) {
   #home-content {
     right: 13em;
@@ -272,5 +284,9 @@ a:hover {
     margin-bottom: 15%;
     height: fit-content;
     width: auto;
+  }
+
+  .arrow {
+    visibility: hidden;
   }
 }
