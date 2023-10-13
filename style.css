@@ -88,6 +88,7 @@ section {
   background-size: 80vw;
   scroll-snap-align: start;
   scroll-snap-type: mandatory;
+  position: relative;
 }
 
 a {
@@ -102,8 +103,11 @@ a:hover {
 }
 
 .content {
-  margin: 10% 17% 10% 30%;
-  min-height: 50vh;
+  position: absolute;
+  top: 15%;
+  right: 17%;
+  max-width: 60%;
+  /* margin: 10% 17% 10% 30%; */
 }
 
 .home-top {
@@ -242,6 +246,7 @@ a:hover {
     padding: 0;
     width: 100vw;
     height: fit-content;
+    position: none;
   }
 
   .content {
@@ -250,11 +255,12 @@ a:hover {
     margin-right: 15%;
     width: fit-content;
     height: fit-content;
+    position: static;
   }
 
   #home-content {
     margin-top: 8vh;
-    height: 40vh;
+    height: fit-content;
   }
 
   .project-content {
