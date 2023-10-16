@@ -11,7 +11,7 @@ const projectSection2 = document.getElementById("projects2");
 
 const contactSection = document.getElementById("contact");
 
-// homeBtn.addEventListener("click", () => navTo(landingSection));
+// homeBtn.addEventListener("click", () => scrollTo(landingSection));
 // projectsBtn.addEventListener("click", () => navTo(projectSection));
 // downBtn.addEventListener("click", () => navTo(projectSection2));
 // upBtn.addEventListener("click", () => navTo(projectSection));

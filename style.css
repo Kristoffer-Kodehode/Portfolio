@@ -4,6 +4,7 @@
   --color-tertiary: #7e273e;
   --color_txt: #f7f7ff;
   text-shadow: var(--color_primary) 2px 2px 6px;
+  scroll-behavior: smooth;
 }
 
 html,
